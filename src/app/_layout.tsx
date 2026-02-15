@@ -62,15 +62,10 @@ function NativeTabsLayout() {
   return (
     <NativeTabs>
       <NativeTabs.Trigger name="index">
-        <NativeTabs.Trigger.Label>Home</NativeTabs.Trigger.Label>
-        <NativeTabs.Trigger.Icon
-          {...Platform.select({
-            ios: { sf: { default: "house", selected: "house.fill" } },
-            default: {
-              src: <NativeTabs.Trigger.VectorIcon family={MaterialIcons} name="home" />,
-            },
-          })}
-        />
+        <NativeTabs.Trigger.Label>Home!</NativeTabs.Trigger.Label>
+                <NativeTabs.Trigger.Icon sf={{ default: 'house', selected: 'house.fill' }}  md="home" />
+
+
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="info">
         <NativeTabs.Trigger.Label>Info</NativeTabs.Trigger.Label>
